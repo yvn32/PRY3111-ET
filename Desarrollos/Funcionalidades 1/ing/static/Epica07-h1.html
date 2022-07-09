@@ -1,0 +1,162 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% block content %}
+      
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <h1 class="display-2 mb-5">Tus pedidos</h1>
+            </div>
+        </div>
+        <section class="bg-dark text-white p-2 rounded-2 py-4 my-3 ps-5 shadow">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-3">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="" height="23" fill="currentColor"
+                                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            </svg></h3>
+                        <h3 class="m-0 ps-2">Pedido 2</h3>
+                        <p class="m-0 ms-3">Código de transacción: asd234</p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+
+                </div>
+                <div class="col">
+                    <p class="m-0">Fecha de compra:</p>
+                    <p class="m-0">27-08-22</p>
+                    <p class="m-0">Articulos:</p>
+                    <p class="m-0">1 Manubrio</p>
+                    <p class="m-0">2 Cascos</p>
+                </div>
+                <div class="col">
+                    <h4>Descripcion</h4>
+                    <p class="m-0">Nombre: Rodrigo Cea</p>
+                    <p class="m-0">Cliente: 12.123.312-2</p>
+                </div>
+                <div class="col">
+                    <h4>Estado del pedido</h4>
+                    <p>En trasito <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-truck" viewBox="0 0 16 16">
+                            <path
+                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                            </path>
+                        </svg>
+                    </p>
+                    <p>Tu despacho <b class="">LLega hoy </b><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                        </svg></p>
+                </div>
+                <div class="col">
+                    <h4>Total del pedido</h4>
+                    <p>$ 150.000</p>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-12 col-sm-6 mt-3">
+                    <button type="button" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                        </svg>
+                        Descargar boleta
+                    </button>
+                    <button type="button" class="btn btn-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                            </path>
+                        </svg>
+                        Hablar con el técnico
+                    </button>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+        </section>
+        <section class=" bg-dark text-white p-2 rounded-2 py-4 my-3 ps-5 shadow">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex mb-3">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="" height="23" fill="currentColor"
+                                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            </svg></h3>
+                        <h3 class="m-0 ps-2">Pedido 1</h3>
+                        <p class="m-0 ms-3">Código de transacción: as123d3 </p>
+                    </div>
+                </div>
+                <div class="col d-none d-md-block">
+
+                </div>
+                <div class="col">
+                    <p class="m-0">Fecha de compra:</p>
+                    <p class="m-0">23-02-21</p>
+                    <p class="m-0">Articulos:</p>
+                    <p class="m-0">1 Bicicleta</p>
+                    <p class="m-0">1 Casco</p>
+                </div>
+                <div class="col">
+                    <h4>Descripcion</h4>
+                    <p class="m-0">Nombre: Rodrigo Cea</p>
+                    <p class="m-0">Cliente: 12.123.312-2</p>
+                </div>
+                <div class="col">
+                    <h4>Estado del pedido</h4>
+                    <p>Finalizado <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck-flatbed" viewBox="0 0 16 16">
+                        <path d="M11.5 4a.5.5 0 0 1 .5.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-4 0 1 1 0 0 1-1-1v-1h11V4.5a.5.5 0 0 1 .5-.5zM3 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1.732 0h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4a2 2 0 0 1 1.732 1z"/>
+                      </svg></p>
+                </div>
+                <div class="col">
+                    <h4>Total del pedido</h4>
+                    <p>$ 110.000</p>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-12 col-sm-6 mt-3">
+                    <button type="button" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+                        </svg>
+                        Descargar boleta
+                    </button>
+                    <button type="button" class="btn btn-secondary disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                            </path>
+                        </svg>
+                        Hablar con el técnico
+                    </button>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+{% endblock %}
+

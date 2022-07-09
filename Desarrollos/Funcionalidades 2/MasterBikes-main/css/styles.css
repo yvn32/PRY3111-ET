@@ -1,0 +1,80 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav, .alert{
+  z-index: 100;
+}
+.description{
+  height: 100px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+
+header {
+  background: lightgray;
+  height: 160px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  line-height: 160px;
+  /* border-bottom: 3px dashed black; */
+}
+
+
+#form-man{width:720px;height:100%;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(5vh - 22px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+
+h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
+
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+
+input:focus{border-bottom:2px solid #78788c}
+p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
+
+button{float:inline-start;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+
+button:hover{background:#78788c;color:#fff}
+
+#div-form{content:'Hi';bottom:-15px;right:-20px;color:transparent;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
+
+span{margin:0 5px 0 15px}
+
+.fade img{
+  height: 350px;
+}
+

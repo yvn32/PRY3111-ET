@@ -1,0 +1,12 @@
+Funcionalidades 1 (ing):
+- Registro de usuario
+- Inventario
+- Reportería
+- Despachos
+
+Funcionalidades 2 (MasterBikes-main):
+- Visualización de productos para venta
+- Visualización de productos para arriendo
+- Carrito de compras
+- Registro de mantenciones programadas
+- Historial de mantenciones
